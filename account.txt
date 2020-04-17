@@ -1,0 +1,20 @@
+Apex class 
+ public class controllerSearch{
+@auraEnabled 
+public static List<Account> getAccount(String params)
+ 
+return [SELECT Id,name,Phone,Industry from Account Where Industry:=params];
+
+}
+}
+
+
+
+
+
+
+
+
+
+
+
